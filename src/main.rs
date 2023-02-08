@@ -15,7 +15,7 @@ fn main() {
     while finish == false {
         input.clear();
         stdin().read_line(&mut input).expect("Failed to read line.");
-        //TODO fix this match statement thing
+
         let input_value = match input.trim().parse() {
             Ok(num @ 1..=9) => num,
             _ => {
